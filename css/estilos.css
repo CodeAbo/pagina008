@@ -1,0 +1,431 @@
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+            /*1rem = 10px*/
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            line-height: 2;
+        }
+        /* Globales*/
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        h1 {
+            font-size: 4.8rem;
+        }
+        
+        h2 {
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+        
+        h3 {
+            font-size: 3.2rem;
+        }
+        
+        h4 {
+            font-size: 2.8rem;
+        }
+        
+        h5 {
+            font-size: 2.4rem;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        /*Utilidades*/
+        
+        .centrar-texto {
+            text-align: center;
+        }
+        
+        .m-0 {
+            margin: 0;
+        }
+        /*Generales*/
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 80%;
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        h3.title {
+            color: #333333;
+            font-size: 5.2rem;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+        
+        @media (min-width: 576px) {
+            h3.title {
+                font-size: 6rem;
+            }
+        }
+        
+        h3.title::after {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: 4px;
+            background-color: #ed4441;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+        
+        h4.subtitle {
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #1a1a1a;
+        }
+        
+        p.texto {
+            font-size: 1.6rem;
+            color: #666666;
+        }
+        /* Botones */
+        
+        a.btn {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 2rem;
+            line-height: 2.72rem;
+            letter-spacing: .4rem;
+            font-weight: 700;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 1.6rem;
+        }
+        
+        .btn-transparent-white {
+            border: 2px solid white;
+        }
+        
+        a.btn-transparent-white {
+            color: #ffffff;
+        }
+        
+        a.btn-transparent-white:hover {
+            background-color: hsla(0, 0%, 100%, .2);
+        }
+        
+        .btn-transparent-dark {
+            border: 2px solid #1a1a1a;
+        }
+        
+        a.btn-transparent-dark {
+            color: #1a1a1a;
+        }
+        
+        a.btn-transparent-dark:hover {
+            background-color: hsla(0, 0%, 0%, .2);
+        }
+        /* Header */
+        
+        .container-header {
+            max-width: 1600px;
+            margin: 0 auto;
+            width: 90%;
+        }
+        
+        .site-header {
+            background-image: url(../img/travel-landscape-01.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            /*filter: brightness(0.5);*/
+            color: white;
+            position: relative;
+        }
+        
+        .site-header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .contenido-header {
+            padding-top: 8rem;
+            position: relative
+        }
+        
+        .site-header h2 {
+            font-size: 8rem;
+        }
+        
+        .site-header p {
+            font-size: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .site-header {
+                display: flex;
+                align-items: center;
+            }
+        }
+        /* Discover */
+        
+        .discover {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 8rem;
+        }
+        
+        @media (min-width: 768px) {
+            .discover {
+                justify-content: space-between;
+            }
+        }
+        
+        .principal {
+            flex: 0 0 100%;
+            order: 2;
+            padding-bottom: 10rem;
+        }
+        
+        @media (min-width: 768px) {
+            .principal {
+                flex-basis: calc(50% - 5rem);
+            }
+        }
+        
+        .principal h3 {
+            color: #1e1e1e;
+            font-size: 6rem;
+            font-weight: 900;
+            line-height: 1.2;
+            text-align: right;
+        }
+        
+        .info-discover {
+            flex: 0 0 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .info-discover {
+                flex-basis: calc(50% - 5rem);
+            }
+        }
+        
+        .info-discover h4 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #1e1e1e;
+        }
+        
+        .info-discover h4::after {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: 4px;
+            background-color: #ed4441;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+        
+        .info-discover p {
+            color: #666;
+            margin-bottom: 5rem;
+        }
+        /* Destinations */
+        
+        .destinations {
+            background-color: #f4f4f4;
+        }
+        
+        .top-destinations div h3 {
+            font-size: 5.2rem;
+            display: block;
+            margin-top: 4rem;
+        }
+        
+        @media (min-width: 992px) {
+            .top-destinations {
+                display: flex;
+                justify-content: space-between;
+            }
+            .top-destinations .a {
+                flex-basis: calc(50% - 4rem);
+                color: #ed4441;
+            }
+            .top-destinations .b {
+                flex-basis: calc(50% - 4rem);
+            }
+        }
+        
+        .imgs-destinations {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem 0;
+        }
+        
+        .imagen {
+            display: block;
+            line-height: 0;
+        }
+        
+        @media (min-width: 576px) {
+            .imgs-destinations {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .imgs-destinations .imagen {
+                flex: 0 0 50%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .imgs-destinations .imagen {
+                flex: 0 0 25%;
+            }
+        }
+        
+        .btn-destinations {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn-destinations a {
+            margin: 3rem 0;
+        }
+        /*Make a video*/
+        
+        .make-video {
+            padding-bottom: 10rem;
+        }
+        
+        .make-video h3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        
+        .make-video h4 {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+        
+        @media (min-width: 576px) {
+            .make-video h4 {
+                width: 75%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .make-video h4 {
+                width: 50%;
+            }
+        }
+        /**/
+        
+        .parrallax {
+            background-image: url('../img/travel-landscape-03.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            width: 100%;
+        }
+        
+        .contenedor {
+            display: flex;
+        }
+        
+        @media (min-width: 768px) {
+            .sin-contenido {
+                width: 50%;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        
+        .inside-world {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (min-width: 768px) {
+            .inside-world {
+                width: 50%;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+        
+        .sin-contenido-abajo {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (min-width: 768px) {
+            .sin-contenido-abajo {
+                width: 100%;
+                height: 200px;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+        /**/
+        
+        .continentes {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @media (min-width: 768px) {
+            .continentes {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .continente {
+                flex: 0 0 50%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .continente {
+                flex: 0 0 25%;
+            }
+        }
+        
+        .continente h5 {
+            font-size: 2.6rem;
+            color: #333333;
+            margin: 0;
+        }
+        
+        .continente p {
+            color: #2EA3F2;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .continente p:last-child {
+            margin-bottom: 2rem;
+        }
